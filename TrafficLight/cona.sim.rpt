@@ -1,0 +1,481 @@
+Simulator report for cona
+Wed Dec 30 13:14:57 2020
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 50.0 us      ;
+; Simulation Netlist Size     ; 265 nodes    ;
+; Simulation Coverage         ;      80.81 % ;
+; Total Number of Transitions ; 199646       ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone      ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; conb.vwf   ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      80.81 % ;
+; Total nodes checked                                 ; 265          ;
+; Total output ports checked                          ; 271          ;
+; Total output ports with complete 1/0-value coverage ; 219          ;
+; Total output ports with no 1/0-value coverage       ; 49           ;
+; Total output ports with no 1-value coverage         ; 52           ;
+; Total output ports with no 0-value coverage         ; 49           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                   ;
++---------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------------+
+; Node Name                                                                 ; Output Port Name                                                               ; Output Port Type ;
++---------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------------+
+; |cona|process_0~0                                                         ; |cona|process_0~0                                                              ; out0             ;
+; |cona|tl~0                                                                ; |cona|tl~0                                                                     ; out              ;
+; |cona|tl~1                                                                ; |cona|tl~1                                                                     ; out              ;
+; |cona|tl~2                                                                ; |cona|tl~2                                                                     ; out              ;
+; |cona|tl~3                                                                ; |cona|tl~3                                                                     ; out              ;
+; |cona|th~0                                                                ; |cona|th~0                                                                     ; out              ;
+; |cona|th~1                                                                ; |cona|th~1                                                                     ; out              ;
+; |cona|th~2                                                                ; |cona|th~2                                                                     ; out              ;
+; |cona|th~3                                                                ; |cona|th~3                                                                     ; out              ;
+; |cona|tl~4                                                                ; |cona|tl~4                                                                     ; out              ;
+; |cona|tl~5                                                                ; |cona|tl~5                                                                     ; out              ;
+; |cona|tl~6                                                                ; |cona|tl~6                                                                     ; out              ;
+; |cona|tl~7                                                                ; |cona|tl~7                                                                     ; out              ;
+; |cona|th~4                                                                ; |cona|th~4                                                                     ; out              ;
+; |cona|th~5                                                                ; |cona|th~5                                                                     ; out              ;
+; |cona|th~6                                                                ; |cona|th~6                                                                     ; out              ;
+; |cona|th~7                                                                ; |cona|th~7                                                                     ; out              ;
+; |cona|a~0                                                                 ; |cona|a~0                                                                      ; out              ;
+; |cona|state~0                                                             ; |cona|state~0                                                                  ; out              ;
+; |cona|state~1                                                             ; |cona|state~1                                                                  ; out              ;
+; |cona|state~2                                                             ; |cona|state~2                                                                  ; out              ;
+; |cona|state~3                                                             ; |cona|state~3                                                                  ; out              ;
+; |cona|th~8                                                                ; |cona|th~8                                                                     ; out              ;
+; |cona|th~9                                                                ; |cona|th~9                                                                     ; out              ;
+; |cona|th~10                                                               ; |cona|th~10                                                                    ; out              ;
+; |cona|th~11                                                               ; |cona|th~11                                                                    ; out              ;
+; |cona|tl~8                                                                ; |cona|tl~8                                                                     ; out              ;
+; |cona|tl~9                                                                ; |cona|tl~9                                                                     ; out              ;
+; |cona|tl~10                                                               ; |cona|tl~10                                                                    ; out              ;
+; |cona|tl~11                                                               ; |cona|tl~11                                                                    ; out              ;
+; |cona|a~1                                                                 ; |cona|a~1                                                                      ; out              ;
+; |cona|g~0                                                                 ; |cona|g~0                                                                      ; out              ;
+; |cona|r~0                                                                 ; |cona|r~0                                                                      ; out              ;
+; |cona|y~0                                                                 ; |cona|y~0                                                                      ; out              ;
+; |cona|l~0                                                                 ; |cona|l~0                                                                      ; out              ;
+; |cona|state~4                                                             ; |cona|state~4                                                                  ; out              ;
+; |cona|state~5                                                             ; |cona|state~5                                                                  ; out              ;
+; |cona|state~6                                                             ; |cona|state~6                                                                  ; out              ;
+; |cona|state~7                                                             ; |cona|state~7                                                                  ; out              ;
+; |cona|state~8                                                             ; |cona|state~8                                                                  ; out              ;
+; |cona|state~9                                                             ; |cona|state~9                                                                  ; out              ;
+; |cona|th~12                                                               ; |cona|th~12                                                                    ; out              ;
+; |cona|th~13                                                               ; |cona|th~13                                                                    ; out              ;
+; |cona|tl~12                                                               ; |cona|tl~12                                                                    ; out              ;
+; |cona|tl~13                                                               ; |cona|tl~13                                                                    ; out              ;
+; |cona|tl~14                                                               ; |cona|tl~14                                                                    ; out              ;
+; |cona|g~1                                                                 ; |cona|g~1                                                                      ; out              ;
+; |cona|l~1                                                                 ; |cona|l~1                                                                      ; out              ;
+; |cona|state~10                                                            ; |cona|state~10                                                                 ; out              ;
+; |cona|state~11                                                            ; |cona|state~11                                                                 ; out              ;
+; |cona|tl~15                                                               ; |cona|tl~15                                                                    ; out              ;
+; |cona|tl~16                                                               ; |cona|tl~16                                                                    ; out              ;
+; |cona|tl~17                                                               ; |cona|tl~17                                                                    ; out              ;
+; |cona|tl~18                                                               ; |cona|tl~18                                                                    ; out              ;
+; |cona|a~2                                                                 ; |cona|a~2                                                                      ; out              ;
+; |cona|state~12                                                            ; |cona|state~12                                                                 ; out              ;
+; |cona|state~13                                                            ; |cona|state~13                                                                 ; out              ;
+; |cona|state~14                                                            ; |cona|state~14                                                                 ; out              ;
+; |cona|state~15                                                            ; |cona|state~15                                                                 ; out              ;
+; |cona|th~15                                                               ; |cona|th~15                                                                    ; out              ;
+; |cona|th~16                                                               ; |cona|th~16                                                                    ; out              ;
+; |cona|th~17                                                               ; |cona|th~17                                                                    ; out              ;
+; |cona|tl~19                                                               ; |cona|tl~19                                                                    ; out              ;
+; |cona|tl~20                                                               ; |cona|tl~20                                                                    ; out              ;
+; |cona|tl~21                                                               ; |cona|tl~21                                                                    ; out              ;
+; |cona|tl~22                                                               ; |cona|tl~22                                                                    ; out              ;
+; |cona|a~3                                                                 ; |cona|a~3                                                                      ; out              ;
+; |cona|y~1                                                                 ; |cona|y~1                                                                      ; out              ;
+; |cona|state~16                                                            ; |cona|state~16                                                                 ; out              ;
+; |cona|state~17                                                            ; |cona|state~17                                                                 ; out              ;
+; |cona|state~18                                                            ; |cona|state~18                                                                 ; out              ;
+; |cona|state~19                                                            ; |cona|state~19                                                                 ; out              ;
+; |cona|state~20                                                            ; |cona|state~20                                                                 ; out              ;
+; |cona|th~18                                                               ; |cona|th~18                                                                    ; out              ;
+; |cona|r~1                                                                 ; |cona|r~1                                                                      ; out              ;
+; |cona|state~21                                                            ; |cona|state~21                                                                 ; out              ;
+; |cona|l~reg0                                                              ; |cona|l~reg0                                                                   ; regout           ;
+; |cona|state.green                                                         ; |cona|state.green                                                              ; regout           ;
+; |cona|state.yellow                                                        ; |cona|state.yellow                                                             ; regout           ;
+; |cona|state.red                                                           ; |cona|state.red                                                                ; regout           ;
+; |cona|state.left                                                          ; |cona|state.left                                                               ; regout           ;
+; |cona|a                                                                   ; |cona|a                                                                        ; regout           ;
+; |cona|th[2]                                                               ; |cona|th[2]                                                                    ; regout           ;
+; |cona|th[1]                                                               ; |cona|th[1]                                                                    ; regout           ;
+; |cona|th[0]                                                               ; |cona|th[0]                                                                    ; regout           ;
+; |cona|tl[3]                                                               ; |cona|tl[3]                                                                    ; regout           ;
+; |cona|tl[2]                                                               ; |cona|tl[2]                                                                    ; regout           ;
+; |cona|tl[1]                                                               ; |cona|tl[1]                                                                    ; regout           ;
+; |cona|tl[0]                                                               ; |cona|tl[0]                                                                    ; regout           ;
+; |cona|g~reg0                                                              ; |cona|g~reg0                                                                   ; regout           ;
+; |cona|r~reg0                                                              ; |cona|r~reg0                                                                   ; regout           ;
+; |cona|y~reg0                                                              ; |cona|y~reg0                                                                   ; regout           ;
+; |cona|clk                                                                 ; |cona|clk                                                                      ; out              ;
+; |cona|r                                                                   ; |cona|r                                                                        ; pin_out          ;
+; |cona|g                                                                   ; |cona|g                                                                        ; pin_out          ;
+; |cona|y                                                                   ; |cona|y                                                                        ; pin_out          ;
+; |cona|l                                                                   ; |cona|l                                                                        ; pin_out          ;
+; |cona|timh[0]                                                             ; |cona|timh[0]                                                                  ; pin_out          ;
+; |cona|timh[1]                                                             ; |cona|timh[1]                                                                  ; pin_out          ;
+; |cona|timh[2]                                                             ; |cona|timh[2]                                                                  ; pin_out          ;
+; |cona|timl[0]                                                             ; |cona|timl[0]                                                                  ; pin_out          ;
+; |cona|timl[1]                                                             ; |cona|timl[1]                                                                  ; pin_out          ;
+; |cona|timl[2]                                                             ; |cona|timl[2]                                                                  ; pin_out          ;
+; |cona|timl[3]                                                             ; |cona|timl[3]                                                                  ; pin_out          ;
+; |cona|state~22                                                            ; |cona|state~22                                                                 ; out0             ;
+; |cona|Selector16~0                                                        ; |cona|Selector16~0                                                             ; out0             ;
+; |cona|Selector16~1                                                        ; |cona|Selector16~1                                                             ; out0             ;
+; |cona|state.red~0                                                         ; |cona|state.red~0                                                              ; out0             ;
+; |cona|Selector16~2                                                        ; |cona|Selector16~2                                                             ; out0             ;
+; |cona|Selector16~3                                                        ; |cona|Selector16~3                                                             ; out0             ;
+; |cona|state~29                                                            ; |cona|state~29                                                                 ; out0             ;
+; |cona|Selector0~0                                                         ; |cona|Selector0~0                                                              ; out              ;
+; |cona|Selector1~0                                                         ; |cona|Selector1~0                                                              ; out0             ;
+; |cona|Selector1~1                                                         ; |cona|Selector1~1                                                              ; out0             ;
+; |cona|Selector1~3                                                         ; |cona|Selector1~3                                                              ; out0             ;
+; |cona|Selector1~4                                                         ; |cona|Selector1~4                                                              ; out0             ;
+; |cona|Selector2~0                                                         ; |cona|Selector2~0                                                              ; out0             ;
+; |cona|Selector2~1                                                         ; |cona|Selector2~1                                                              ; out0             ;
+; |cona|Selector2~3                                                         ; |cona|Selector2~3                                                              ; out0             ;
+; |cona|Selector2~4                                                         ; |cona|Selector2~4                                                              ; out0             ;
+; |cona|Selector3~0                                                         ; |cona|Selector3~0                                                              ; out0             ;
+; |cona|Selector3~1                                                         ; |cona|Selector3~1                                                              ; out0             ;
+; |cona|Selector3~3                                                         ; |cona|Selector3~3                                                              ; out0             ;
+; |cona|Selector3~4                                                         ; |cona|Selector3~4                                                              ; out0             ;
+; |cona|Selector4~0                                                         ; |cona|Selector4~0                                                              ; out0             ;
+; |cona|Selector4~1                                                         ; |cona|Selector4~1                                                              ; out0             ;
+; |cona|Selector4~2                                                         ; |cona|Selector4~2                                                              ; out0             ;
+; |cona|Selector4~3                                                         ; |cona|Selector4~3                                                              ; out0             ;
+; |cona|Selector4~4                                                         ; |cona|Selector4~4                                                              ; out0             ;
+; |cona|Selector5~0                                                         ; |cona|Selector5~0                                                              ; out0             ;
+; |cona|Selector5~1                                                         ; |cona|Selector5~1                                                              ; out0             ;
+; |cona|Selector5~2                                                         ; |cona|Selector5~2                                                              ; out0             ;
+; |cona|Selector5~3                                                         ; |cona|Selector5~3                                                              ; out0             ;
+; |cona|Selector5~4                                                         ; |cona|Selector5~4                                                              ; out0             ;
+; |cona|Selector6~0                                                         ; |cona|Selector6~0                                                              ; out              ;
+; |cona|Selector7~0                                                         ; |cona|Selector7~0                                                              ; out0             ;
+; |cona|Selector7~1                                                         ; |cona|Selector7~1                                                              ; out0             ;
+; |cona|Selector7~2                                                         ; |cona|Selector7~2                                                              ; out0             ;
+; |cona|Selector7~3                                                         ; |cona|Selector7~3                                                              ; out0             ;
+; |cona|Selector7~4                                                         ; |cona|Selector7~4                                                              ; out0             ;
+; |cona|Selector8~0                                                         ; |cona|Selector8~0                                                              ; out              ;
+; |cona|Selector9~0                                                         ; |cona|Selector9~0                                                              ; out              ;
+; |cona|Selector10~0                                                        ; |cona|Selector10~0                                                             ; out              ;
+; |cona|Selector11~0                                                        ; |cona|Selector11~0                                                             ; out              ;
+; |cona|Selector12~0                                                        ; |cona|Selector12~0                                                             ; out              ;
+; |cona|Selector13~0                                                        ; |cona|Selector13~0                                                             ; out0             ;
+; |cona|Selector13~2                                                        ; |cona|Selector13~2                                                             ; out0             ;
+; |cona|Selector13~3                                                        ; |cona|Selector13~3                                                             ; out0             ;
+; |cona|Selector13~4                                                        ; |cona|Selector13~4                                                             ; out0             ;
+; |cona|Selector14~0                                                        ; |cona|Selector14~0                                                             ; out0             ;
+; |cona|Selector14~2                                                        ; |cona|Selector14~2                                                             ; out0             ;
+; |cona|Selector14~3                                                        ; |cona|Selector14~3                                                             ; out0             ;
+; |cona|Selector15~0                                                        ; |cona|Selector15~0                                                             ; out              ;
+; |cona|Selector16~4                                                        ; |cona|Selector16~4                                                             ; out0             ;
+; |cona|Selector16~5                                                        ; |cona|Selector16~5                                                             ; out0             ;
+; |cona|Selector16~8                                                        ; |cona|Selector16~8                                                             ; out0             ;
+; |cona|Equal0~0                                                            ; |cona|Equal0~0                                                                 ; out0             ;
+; |cona|Equal1~0                                                            ; |cona|Equal1~0                                                                 ; out0             ;
+; |cona|Equal2~0                                                            ; |cona|Equal2~0                                                                 ; out0             ;
+; |cona|lpm_add_sub:Add1|result_node[1]                                     ; |cona|lpm_add_sub:Add1|result_node[1]                                          ; out0             ;
+; |cona|lpm_add_sub:Add1|result_node[2]                                     ; |cona|lpm_add_sub:Add1|result_node[2]                                          ; out0             ;
+; |cona|lpm_add_sub:Add1|result_node[3]                                     ; |cona|lpm_add_sub:Add1|result_node[3]                                          ; out0             ;
+; |cona|lpm_add_sub:Add1|result_node[4]                                     ; |cona|lpm_add_sub:Add1|result_node[4]                                          ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]~1                  ; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]~1                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~2                  ; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~2                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~3                  ; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~3                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~4                  ; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~4                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]                    ; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]                         ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                    ; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                    ; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                    ; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                         ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~4                                  ; |cona|lpm_add_sub:Add1|addcore:adder|_~4                                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~5                                  ; |cona|lpm_add_sub:Add1|addcore:adder|_~5                                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~6                                  ; |cona|lpm_add_sub:Add1|addcore:adder|_~6                                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~11                                 ; |cona|lpm_add_sub:Add1|addcore:adder|_~11                                      ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~12                                 ; |cona|lpm_add_sub:Add1|addcore:adder|_~12                                      ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~13                                 ; |cona|lpm_add_sub:Add1|addcore:adder|_~13                                      ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~14                                 ; |cona|lpm_add_sub:Add1|addcore:adder|_~14                                      ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~15                                 ; |cona|lpm_add_sub:Add1|addcore:adder|_~15                                      ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~16                                 ; |cona|lpm_add_sub:Add1|addcore:adder|_~16                                      ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~17                                 ; |cona|lpm_add_sub:Add1|addcore:adder|_~17                                      ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~18                                 ; |cona|lpm_add_sub:Add1|addcore:adder|_~18                                      ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~19                                 ; |cona|lpm_add_sub:Add1|addcore:adder|_~19                                      ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |cona|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]      ; sout             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |cona|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT ; cout             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |cona|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |cona|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |cona|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |cona|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |cona|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; sout             ;
+; |cona|lpm_add_sub:Add0|result_node[1]                                     ; |cona|lpm_add_sub:Add0|result_node[1]                                          ; out0             ;
+; |cona|lpm_add_sub:Add0|result_node[2]                                     ; |cona|lpm_add_sub:Add0|result_node[2]                                          ; out0             ;
+; |cona|lpm_add_sub:Add0|result_node[3]                                     ; |cona|lpm_add_sub:Add0|result_node[3]                                          ; out0             ;
+; |cona|lpm_add_sub:Add0|result_node[4]                                     ; |cona|lpm_add_sub:Add0|result_node[4]                                          ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~2                  ; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~2                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~3                  ; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~3                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~4                  ; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~4                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                    ; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                         ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                    ; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                    ; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                    ; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                         ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~5                                  ; |cona|lpm_add_sub:Add0|addcore:adder|_~5                                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~6                                  ; |cona|lpm_add_sub:Add0|addcore:adder|_~6                                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~11                                 ; |cona|lpm_add_sub:Add0|addcore:adder|_~11                                      ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~12                                 ; |cona|lpm_add_sub:Add0|addcore:adder|_~12                                      ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~13                                 ; |cona|lpm_add_sub:Add0|addcore:adder|_~13                                      ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~14                                 ; |cona|lpm_add_sub:Add0|addcore:adder|_~14                                      ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~15                                 ; |cona|lpm_add_sub:Add0|addcore:adder|_~15                                      ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~16                                 ; |cona|lpm_add_sub:Add0|addcore:adder|_~16                                      ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~17                                 ; |cona|lpm_add_sub:Add0|addcore:adder|_~17                                      ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~18                                 ; |cona|lpm_add_sub:Add0|addcore:adder|_~18                                      ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~19                                 ; |cona|lpm_add_sub:Add0|addcore:adder|_~19                                      ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |cona|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]      ; sout             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |cona|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT ; cout             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |cona|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |cona|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |cona|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |cona|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |cona|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; sout             ;
++---------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                      ;
++---------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------------+
+; Node Name                                                                 ; Output Port Name                                                               ; Output Port Type ;
++---------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------------+
+; |cona|th~14                                                               ; |cona|th~14                                                                    ; out              ;
+; |cona|th[3]                                                               ; |cona|th[3]                                                                    ; regout           ;
+; |cona|rst                                                                 ; |cona|rst                                                                      ; out              ;
+; |cona|timh[3]                                                             ; |cona|timh[3]                                                                  ; pin_out          ;
+; |cona|state~23                                                            ; |cona|state~23                                                                 ; out0             ;
+; |cona|state~31                                                            ; |cona|state~31                                                                 ; out0             ;
+; |cona|Selector1~2                                                         ; |cona|Selector1~2                                                              ; out0             ;
+; |cona|Selector2~2                                                         ; |cona|Selector2~2                                                              ; out0             ;
+; |cona|Selector3~2                                                         ; |cona|Selector3~2                                                              ; out0             ;
+; |cona|Selector13~1                                                        ; |cona|Selector13~1                                                             ; out0             ;
+; |cona|Selector14~1                                                        ; |cona|Selector14~1                                                             ; out0             ;
+; |cona|Selector14~4                                                        ; |cona|Selector14~4                                                             ; out0             ;
+; |cona|Selector16~6                                                        ; |cona|Selector16~6                                                             ; out0             ;
+; |cona|Selector16~7                                                        ; |cona|Selector16~7                                                             ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[0]                             ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~0                                  ; |cona|lpm_add_sub:Add1|addcore:adder|_~0                                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~1                                  ; |cona|lpm_add_sub:Add1|addcore:adder|_~1                                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~2                                  ; |cona|lpm_add_sub:Add1|addcore:adder|_~2                                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~3                                  ; |cona|lpm_add_sub:Add1|addcore:adder|_~3                                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[4]~1                      ; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[4]~1                           ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[4]                        ; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[4]                             ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[3]                             ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[2]                             ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[1]                             ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~7                                  ; |cona|lpm_add_sub:Add1|addcore:adder|_~7                                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~8                                  ; |cona|lpm_add_sub:Add1|addcore:adder|_~8                                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~9                                  ; |cona|lpm_add_sub:Add1|addcore:adder|_~9                                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~10                                 ; |cona|lpm_add_sub:Add1|addcore:adder|_~10                                      ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |cona|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[0]                             ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~0                                  ; |cona|lpm_add_sub:Add0|addcore:adder|_~0                                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~1                                  ; |cona|lpm_add_sub:Add0|addcore:adder|_~1                                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~2                                  ; |cona|lpm_add_sub:Add0|addcore:adder|_~2                                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~3                                  ; |cona|lpm_add_sub:Add0|addcore:adder|_~3                                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[4]~1                      ; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[4]~1                           ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[4]                        ; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[4]                             ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[3]                             ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[2]                             ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[1]                             ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~1                  ; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~1                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~4                                  ; |cona|lpm_add_sub:Add0|addcore:adder|_~4                                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~7                                  ; |cona|lpm_add_sub:Add0|addcore:adder|_~7                                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~8                                  ; |cona|lpm_add_sub:Add0|addcore:adder|_~8                                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~9                                  ; |cona|lpm_add_sub:Add0|addcore:adder|_~9                                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~10                                 ; |cona|lpm_add_sub:Add0|addcore:adder|_~10                                      ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |cona|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
++---------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                      ;
++---------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------------+
+; Node Name                                                                 ; Output Port Name                                                               ; Output Port Type ;
++---------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------------+
+; |cona|th~14                                                               ; |cona|th~14                                                                    ; out              ;
+; |cona|th[3]                                                               ; |cona|th[3]                                                                    ; regout           ;
+; |cona|timh[3]                                                             ; |cona|timh[3]                                                                  ; pin_out          ;
+; |cona|Selector1~2                                                         ; |cona|Selector1~2                                                              ; out0             ;
+; |cona|Selector2~2                                                         ; |cona|Selector2~2                                                              ; out0             ;
+; |cona|Selector3~2                                                         ; |cona|Selector3~2                                                              ; out0             ;
+; |cona|Selector13~1                                                        ; |cona|Selector13~1                                                             ; out0             ;
+; |cona|Selector14~1                                                        ; |cona|Selector14~1                                                             ; out0             ;
+; |cona|Selector14~4                                                        ; |cona|Selector14~4                                                             ; out0             ;
+; |cona|Selector16~6                                                        ; |cona|Selector16~6                                                             ; out0             ;
+; |cona|Selector16~7                                                        ; |cona|Selector16~7                                                             ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[0]                             ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; |cona|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~0                                  ; |cona|lpm_add_sub:Add1|addcore:adder|_~0                                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~1                                  ; |cona|lpm_add_sub:Add1|addcore:adder|_~1                                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~2                                  ; |cona|lpm_add_sub:Add1|addcore:adder|_~2                                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~3                                  ; |cona|lpm_add_sub:Add1|addcore:adder|_~3                                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[4]~1                      ; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[4]~1                           ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[4]                        ; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[4]                             ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[3]                             ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[2]                             ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; |cona|lpm_add_sub:Add1|addcore:adder|datab_node[1]                             ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~7                                  ; |cona|lpm_add_sub:Add1|addcore:adder|_~7                                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~8                                  ; |cona|lpm_add_sub:Add1|addcore:adder|_~8                                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~9                                  ; |cona|lpm_add_sub:Add1|addcore:adder|_~9                                       ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|_~10                                 ; |cona|lpm_add_sub:Add1|addcore:adder|_~10                                      ; out0             ;
+; |cona|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |cona|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[0]                             ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~0                                  ; |cona|lpm_add_sub:Add0|addcore:adder|_~0                                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~1                                  ; |cona|lpm_add_sub:Add0|addcore:adder|_~1                                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~2                                  ; |cona|lpm_add_sub:Add0|addcore:adder|_~2                                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~3                                  ; |cona|lpm_add_sub:Add0|addcore:adder|_~3                                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[4]~1                      ; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[4]~1                           ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[4]                        ; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[4]                             ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[3]                             ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[2]                             ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; |cona|lpm_add_sub:Add0|addcore:adder|datab_node[1]                             ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~1                  ; |cona|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~1                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~4                                  ; |cona|lpm_add_sub:Add0|addcore:adder|_~4                                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~7                                  ; |cona|lpm_add_sub:Add0|addcore:adder|_~7                                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~8                                  ; |cona|lpm_add_sub:Add0|addcore:adder|_~8                                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~9                                  ; |cona|lpm_add_sub:Add0|addcore:adder|_~9                                       ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|_~10                                 ; |cona|lpm_add_sub:Add0|addcore:adder|_~10                                      ; out0             ;
+; |cona|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |cona|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
++---------------------------------------------------------------------------+--------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Wed Dec 30 13:14:56 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off jiaotongdeng -c cona
+Info: Using vector source file "D:/jiaotongdeng/conb.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      80.81 %
+Info: Number of transitions in simulation is 199646
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 143 megabytes
+    Info: Processing ended: Wed Dec 30 13:14:57 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

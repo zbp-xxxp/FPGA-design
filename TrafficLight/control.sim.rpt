@@ -1,0 +1,753 @@
+Simulator report for control
+Wed Dec 30 09:11:51 2020
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 50.0 us      ;
+; Simulation Netlist Size     ; 488 nodes    ;
+; Simulation Coverage         ;      80.60 % ;
+; Total Number of Transitions ; 1471398      ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone      ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                       ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+; Option                                                                                     ; Setting     ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+; Simulation mode                                                                            ; Functional  ; Timing        ;
+; Start time                                                                                 ; 0 ns        ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF        ;               ;
+; Vector input source                                                                        ; control.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On          ; On            ;
+; Check outputs                                                                              ; Off         ; Off           ;
+; Report simulation coverage                                                                 ; On          ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On          ; On            ;
+; Display missing 1-value coverage report                                                    ; On          ; On            ;
+; Display missing 0-value coverage report                                                    ; On          ; On            ;
+; Detect setup and hold time violations                                                      ; Off         ; Off           ;
+; Detect glitches                                                                            ; Off         ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off         ; Off           ;
+; Generate Signal Activity File                                                              ; Off         ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off         ; Off           ;
+; Group bus channels in simulation results                                                   ; Off         ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On          ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE  ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off         ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto        ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      80.60 % ;
+; Total nodes checked                                 ; 488          ;
+; Total output ports checked                          ; 500          ;
+; Total output ports with complete 1/0-value coverage ; 403          ;
+; Total output ports with no 1/0-value coverage       ; 92           ;
+; Total output ports with no 1-value coverage         ; 97           ;
+; Total output ports with no 0-value coverage         ; 92           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                         ;
++--------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                            ; Output Port Name                                                                          ; Output Port Type ;
++--------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+
+; |control|clk                                                                         ; |control|clk                                                                              ; out              ;
+; |control|r1                                                                          ; |control|r1                                                                               ; pin_out          ;
+; |control|g1                                                                          ; |control|g1                                                                               ; pin_out          ;
+; |control|y1                                                                          ; |control|y1                                                                               ; pin_out          ;
+; |control|l1                                                                          ; |control|l1                                                                               ; pin_out          ;
+; |control|timh1[0]                                                                    ; |control|timh1[0]                                                                         ; pin_out          ;
+; |control|timh1[1]                                                                    ; |control|timh1[1]                                                                         ; pin_out          ;
+; |control|timh1[2]                                                                    ; |control|timh1[2]                                                                         ; pin_out          ;
+; |control|timl1[0]                                                                    ; |control|timl1[0]                                                                         ; pin_out          ;
+; |control|timl1[1]                                                                    ; |control|timl1[1]                                                                         ; pin_out          ;
+; |control|timl1[2]                                                                    ; |control|timl1[2]                                                                         ; pin_out          ;
+; |control|timl1[3]                                                                    ; |control|timl1[3]                                                                         ; pin_out          ;
+; |control|r2                                                                          ; |control|r2                                                                               ; pin_out          ;
+; |control|g2                                                                          ; |control|g2                                                                               ; pin_out          ;
+; |control|y2                                                                          ; |control|y2                                                                               ; pin_out          ;
+; |control|l2                                                                          ; |control|l2                                                                               ; pin_out          ;
+; |control|timh2[0]                                                                    ; |control|timh2[0]                                                                         ; pin_out          ;
+; |control|timh2[1]                                                                    ; |control|timh2[1]                                                                         ; pin_out          ;
+; |control|timh2[2]                                                                    ; |control|timh2[2]                                                                         ; pin_out          ;
+; |control|timl2[0]                                                                    ; |control|timl2[0]                                                                         ; pin_out          ;
+; |control|timl2[1]                                                                    ; |control|timl2[1]                                                                         ; pin_out          ;
+; |control|timl2[2]                                                                    ; |control|timl2[2]                                                                         ; pin_out          ;
+; |control|timl2[3]                                                                    ; |control|timl2[3]                                                                         ; pin_out          ;
+; |control|conb:u2|process_0~0                                                         ; |control|conb:u2|process_0~0                                                              ; out0             ;
+; |control|conb:u2|tl~0                                                                ; |control|conb:u2|tl~0                                                                     ; out              ;
+; |control|conb:u2|tl~1                                                                ; |control|conb:u2|tl~1                                                                     ; out              ;
+; |control|conb:u2|tl~2                                                                ; |control|conb:u2|tl~2                                                                     ; out              ;
+; |control|conb:u2|tl~3                                                                ; |control|conb:u2|tl~3                                                                     ; out              ;
+; |control|conb:u2|th~0                                                                ; |control|conb:u2|th~0                                                                     ; out              ;
+; |control|conb:u2|th~1                                                                ; |control|conb:u2|th~1                                                                     ; out              ;
+; |control|conb:u2|th~2                                                                ; |control|conb:u2|th~2                                                                     ; out              ;
+; |control|conb:u2|th~3                                                                ; |control|conb:u2|th~3                                                                     ; out              ;
+; |control|conb:u2|tl~4                                                                ; |control|conb:u2|tl~4                                                                     ; out              ;
+; |control|conb:u2|tl~5                                                                ; |control|conb:u2|tl~5                                                                     ; out              ;
+; |control|conb:u2|tl~6                                                                ; |control|conb:u2|tl~6                                                                     ; out              ;
+; |control|conb:u2|tl~7                                                                ; |control|conb:u2|tl~7                                                                     ; out              ;
+; |control|conb:u2|th~4                                                                ; |control|conb:u2|th~4                                                                     ; out              ;
+; |control|conb:u2|th~5                                                                ; |control|conb:u2|th~5                                                                     ; out              ;
+; |control|conb:u2|th~6                                                                ; |control|conb:u2|th~6                                                                     ; out              ;
+; |control|conb:u2|th~7                                                                ; |control|conb:u2|th~7                                                                     ; out              ;
+; |control|conb:u2|a~0                                                                 ; |control|conb:u2|a~0                                                                      ; out              ;
+; |control|conb:u2|state~0                                                             ; |control|conb:u2|state~0                                                                  ; out              ;
+; |control|conb:u2|state~1                                                             ; |control|conb:u2|state~1                                                                  ; out              ;
+; |control|conb:u2|state~2                                                             ; |control|conb:u2|state~2                                                                  ; out              ;
+; |control|conb:u2|state~3                                                             ; |control|conb:u2|state~3                                                                  ; out              ;
+; |control|conb:u2|th~8                                                                ; |control|conb:u2|th~8                                                                     ; out              ;
+; |control|conb:u2|th~9                                                                ; |control|conb:u2|th~9                                                                     ; out              ;
+; |control|conb:u2|th~10                                                               ; |control|conb:u2|th~10                                                                    ; out              ;
+; |control|conb:u2|th~11                                                               ; |control|conb:u2|th~11                                                                    ; out              ;
+; |control|conb:u2|tl~8                                                                ; |control|conb:u2|tl~8                                                                     ; out              ;
+; |control|conb:u2|tl~9                                                                ; |control|conb:u2|tl~9                                                                     ; out              ;
+; |control|conb:u2|tl~10                                                               ; |control|conb:u2|tl~10                                                                    ; out              ;
+; |control|conb:u2|tl~11                                                               ; |control|conb:u2|tl~11                                                                    ; out              ;
+; |control|conb:u2|a~1                                                                 ; |control|conb:u2|a~1                                                                      ; out              ;
+; |control|conb:u2|g~0                                                                 ; |control|conb:u2|g~0                                                                      ; out              ;
+; |control|conb:u2|r~0                                                                 ; |control|conb:u2|r~0                                                                      ; out              ;
+; |control|conb:u2|y~0                                                                 ; |control|conb:u2|y~0                                                                      ; out              ;
+; |control|conb:u2|state~4                                                             ; |control|conb:u2|state~4                                                                  ; out              ;
+; |control|conb:u2|state~5                                                             ; |control|conb:u2|state~5                                                                  ; out              ;
+; |control|conb:u2|state~6                                                             ; |control|conb:u2|state~6                                                                  ; out              ;
+; |control|conb:u2|state~7                                                             ; |control|conb:u2|state~7                                                                  ; out              ;
+; |control|conb:u2|state~8                                                             ; |control|conb:u2|state~8                                                                  ; out              ;
+; |control|conb:u2|state~9                                                             ; |control|conb:u2|state~9                                                                  ; out              ;
+; |control|conb:u2|th~12                                                               ; |control|conb:u2|th~12                                                                    ; out              ;
+; |control|conb:u2|th~13                                                               ; |control|conb:u2|th~13                                                                    ; out              ;
+; |control|conb:u2|tl~12                                                               ; |control|conb:u2|tl~12                                                                    ; out              ;
+; |control|conb:u2|tl~13                                                               ; |control|conb:u2|tl~13                                                                    ; out              ;
+; |control|conb:u2|tl~14                                                               ; |control|conb:u2|tl~14                                                                    ; out              ;
+; |control|conb:u2|r~1                                                                 ; |control|conb:u2|r~1                                                                      ; out              ;
+; |control|conb:u2|l~0                                                                 ; |control|conb:u2|l~0                                                                      ; out              ;
+; |control|conb:u2|state~10                                                            ; |control|conb:u2|state~10                                                                 ; out              ;
+; |control|conb:u2|state~11                                                            ; |control|conb:u2|state~11                                                                 ; out              ;
+; |control|conb:u2|state~12                                                            ; |control|conb:u2|state~12                                                                 ; out              ;
+; |control|conb:u2|th~14                                                               ; |control|conb:u2|th~14                                                                    ; out              ;
+; |control|conb:u2|g~1                                                                 ; |control|conb:u2|g~1                                                                      ; out              ;
+; |control|conb:u2|l~1                                                                 ; |control|conb:u2|l~1                                                                      ; out              ;
+; |control|conb:u2|state~13                                                            ; |control|conb:u2|state~13                                                                 ; out              ;
+; |control|conb:u2|state~14                                                            ; |control|conb:u2|state~14                                                                 ; out              ;
+; |control|conb:u2|y~1                                                                 ; |control|conb:u2|y~1                                                                      ; out              ;
+; |control|conb:u2|state~15                                                            ; |control|conb:u2|state~15                                                                 ; out              ;
+; |control|conb:u2|l                                                                   ; |control|conb:u2|l                                                                        ; regout           ;
+; |control|conb:u2|state.green                                                         ; |control|conb:u2|state.green                                                              ; regout           ;
+; |control|conb:u2|state.yellow                                                        ; |control|conb:u2|state.yellow                                                             ; regout           ;
+; |control|conb:u2|state.red                                                           ; |control|conb:u2|state.red                                                                ; regout           ;
+; |control|conb:u2|state.left                                                          ; |control|conb:u2|state.left                                                               ; regout           ;
+; |control|conb:u2|a                                                                   ; |control|conb:u2|a                                                                        ; regout           ;
+; |control|conb:u2|th[2]                                                               ; |control|conb:u2|th[2]                                                                    ; regout           ;
+; |control|conb:u2|th[1]                                                               ; |control|conb:u2|th[1]                                                                    ; regout           ;
+; |control|conb:u2|th[0]                                                               ; |control|conb:u2|th[0]                                                                    ; regout           ;
+; |control|conb:u2|tl[3]                                                               ; |control|conb:u2|tl[3]                                                                    ; regout           ;
+; |control|conb:u2|tl[2]                                                               ; |control|conb:u2|tl[2]                                                                    ; regout           ;
+; |control|conb:u2|tl[1]                                                               ; |control|conb:u2|tl[1]                                                                    ; regout           ;
+; |control|conb:u2|tl[0]                                                               ; |control|conb:u2|tl[0]                                                                    ; regout           ;
+; |control|conb:u2|g                                                                   ; |control|conb:u2|g                                                                        ; regout           ;
+; |control|conb:u2|r                                                                   ; |control|conb:u2|r                                                                        ; regout           ;
+; |control|conb:u2|y                                                                   ; |control|conb:u2|y                                                                        ; regout           ;
+; |control|conb:u2|state~16                                                            ; |control|conb:u2|state~16                                                                 ; out0             ;
+; |control|conb:u2|state.red~0                                                         ; |control|conb:u2|state.red~0                                                              ; out0             ;
+; |control|conb:u2|Selector13~0                                                        ; |control|conb:u2|Selector13~0                                                             ; out0             ;
+; |control|conb:u2|state.yellow~0                                                      ; |control|conb:u2|state.yellow~0                                                           ; out0             ;
+; |control|conb:u2|Selector13~1                                                        ; |control|conb:u2|Selector13~1                                                             ; out0             ;
+; |control|conb:u2|state.green~0                                                       ; |control|conb:u2|state.green~0                                                            ; out0             ;
+; |control|conb:u2|Selector13~2                                                        ; |control|conb:u2|Selector13~2                                                             ; out0             ;
+; |control|conb:u2|state.left~0                                                        ; |control|conb:u2|state.left~0                                                             ; out0             ;
+; |control|conb:u2|Selector13~3                                                        ; |control|conb:u2|Selector13~3                                                             ; out0             ;
+; |control|conb:u2|state~23                                                            ; |control|conb:u2|state~23                                                                 ; out0             ;
+; |control|cona:u1|process_0~0                                                         ; |control|cona:u1|process_0~0                                                              ; out0             ;
+; |control|cona:u1|tl~0                                                                ; |control|cona:u1|tl~0                                                                     ; out              ;
+; |control|cona:u1|tl~1                                                                ; |control|cona:u1|tl~1                                                                     ; out              ;
+; |control|cona:u1|tl~2                                                                ; |control|cona:u1|tl~2                                                                     ; out              ;
+; |control|cona:u1|tl~3                                                                ; |control|cona:u1|tl~3                                                                     ; out              ;
+; |control|cona:u1|th~0                                                                ; |control|cona:u1|th~0                                                                     ; out              ;
+; |control|cona:u1|th~1                                                                ; |control|cona:u1|th~1                                                                     ; out              ;
+; |control|cona:u1|th~2                                                                ; |control|cona:u1|th~2                                                                     ; out              ;
+; |control|cona:u1|th~3                                                                ; |control|cona:u1|th~3                                                                     ; out              ;
+; |control|cona:u1|tl~4                                                                ; |control|cona:u1|tl~4                                                                     ; out              ;
+; |control|cona:u1|tl~5                                                                ; |control|cona:u1|tl~5                                                                     ; out              ;
+; |control|cona:u1|tl~6                                                                ; |control|cona:u1|tl~6                                                                     ; out              ;
+; |control|cona:u1|tl~7                                                                ; |control|cona:u1|tl~7                                                                     ; out              ;
+; |control|cona:u1|th~4                                                                ; |control|cona:u1|th~4                                                                     ; out              ;
+; |control|cona:u1|th~5                                                                ; |control|cona:u1|th~5                                                                     ; out              ;
+; |control|cona:u1|th~6                                                                ; |control|cona:u1|th~6                                                                     ; out              ;
+; |control|cona:u1|th~7                                                                ; |control|cona:u1|th~7                                                                     ; out              ;
+; |control|cona:u1|a~0                                                                 ; |control|cona:u1|a~0                                                                      ; out              ;
+; |control|cona:u1|state~0                                                             ; |control|cona:u1|state~0                                                                  ; out              ;
+; |control|cona:u1|state~1                                                             ; |control|cona:u1|state~1                                                                  ; out              ;
+; |control|cona:u1|state~2                                                             ; |control|cona:u1|state~2                                                                  ; out              ;
+; |control|cona:u1|state~3                                                             ; |control|cona:u1|state~3                                                                  ; out              ;
+; |control|cona:u1|th~8                                                                ; |control|cona:u1|th~8                                                                     ; out              ;
+; |control|cona:u1|th~9                                                                ; |control|cona:u1|th~9                                                                     ; out              ;
+; |control|cona:u1|th~10                                                               ; |control|cona:u1|th~10                                                                    ; out              ;
+; |control|cona:u1|th~11                                                               ; |control|cona:u1|th~11                                                                    ; out              ;
+; |control|cona:u1|tl~8                                                                ; |control|cona:u1|tl~8                                                                     ; out              ;
+; |control|cona:u1|tl~9                                                                ; |control|cona:u1|tl~9                                                                     ; out              ;
+; |control|cona:u1|tl~10                                                               ; |control|cona:u1|tl~10                                                                    ; out              ;
+; |control|cona:u1|tl~11                                                               ; |control|cona:u1|tl~11                                                                    ; out              ;
+; |control|cona:u1|a~1                                                                 ; |control|cona:u1|a~1                                                                      ; out              ;
+; |control|cona:u1|g~0                                                                 ; |control|cona:u1|g~0                                                                      ; out              ;
+; |control|cona:u1|r~0                                                                 ; |control|cona:u1|r~0                                                                      ; out              ;
+; |control|cona:u1|y~0                                                                 ; |control|cona:u1|y~0                                                                      ; out              ;
+; |control|cona:u1|l~0                                                                 ; |control|cona:u1|l~0                                                                      ; out              ;
+; |control|cona:u1|state~4                                                             ; |control|cona:u1|state~4                                                                  ; out              ;
+; |control|cona:u1|state~5                                                             ; |control|cona:u1|state~5                                                                  ; out              ;
+; |control|cona:u1|state~6                                                             ; |control|cona:u1|state~6                                                                  ; out              ;
+; |control|cona:u1|state~7                                                             ; |control|cona:u1|state~7                                                                  ; out              ;
+; |control|cona:u1|state~8                                                             ; |control|cona:u1|state~8                                                                  ; out              ;
+; |control|cona:u1|state~9                                                             ; |control|cona:u1|state~9                                                                  ; out              ;
+; |control|cona:u1|th~12                                                               ; |control|cona:u1|th~12                                                                    ; out              ;
+; |control|cona:u1|th~13                                                               ; |control|cona:u1|th~13                                                                    ; out              ;
+; |control|cona:u1|tl~12                                                               ; |control|cona:u1|tl~12                                                                    ; out              ;
+; |control|cona:u1|tl~13                                                               ; |control|cona:u1|tl~13                                                                    ; out              ;
+; |control|cona:u1|tl~14                                                               ; |control|cona:u1|tl~14                                                                    ; out              ;
+; |control|cona:u1|g~1                                                                 ; |control|cona:u1|g~1                                                                      ; out              ;
+; |control|cona:u1|l~1                                                                 ; |control|cona:u1|l~1                                                                      ; out              ;
+; |control|cona:u1|state~10                                                            ; |control|cona:u1|state~10                                                                 ; out              ;
+; |control|cona:u1|state~11                                                            ; |control|cona:u1|state~11                                                                 ; out              ;
+; |control|cona:u1|tl~15                                                               ; |control|cona:u1|tl~15                                                                    ; out              ;
+; |control|cona:u1|tl~16                                                               ; |control|cona:u1|tl~16                                                                    ; out              ;
+; |control|cona:u1|tl~17                                                               ; |control|cona:u1|tl~17                                                                    ; out              ;
+; |control|cona:u1|tl~18                                                               ; |control|cona:u1|tl~18                                                                    ; out              ;
+; |control|cona:u1|a~2                                                                 ; |control|cona:u1|a~2                                                                      ; out              ;
+; |control|cona:u1|state~12                                                            ; |control|cona:u1|state~12                                                                 ; out              ;
+; |control|cona:u1|state~13                                                            ; |control|cona:u1|state~13                                                                 ; out              ;
+; |control|cona:u1|state~14                                                            ; |control|cona:u1|state~14                                                                 ; out              ;
+; |control|cona:u1|state~15                                                            ; |control|cona:u1|state~15                                                                 ; out              ;
+; |control|cona:u1|th~15                                                               ; |control|cona:u1|th~15                                                                    ; out              ;
+; |control|cona:u1|th~16                                                               ; |control|cona:u1|th~16                                                                    ; out              ;
+; |control|cona:u1|th~17                                                               ; |control|cona:u1|th~17                                                                    ; out              ;
+; |control|cona:u1|tl~19                                                               ; |control|cona:u1|tl~19                                                                    ; out              ;
+; |control|cona:u1|tl~20                                                               ; |control|cona:u1|tl~20                                                                    ; out              ;
+; |control|cona:u1|tl~21                                                               ; |control|cona:u1|tl~21                                                                    ; out              ;
+; |control|cona:u1|tl~22                                                               ; |control|cona:u1|tl~22                                                                    ; out              ;
+; |control|cona:u1|a~3                                                                 ; |control|cona:u1|a~3                                                                      ; out              ;
+; |control|cona:u1|y~1                                                                 ; |control|cona:u1|y~1                                                                      ; out              ;
+; |control|cona:u1|state~16                                                            ; |control|cona:u1|state~16                                                                 ; out              ;
+; |control|cona:u1|state~17                                                            ; |control|cona:u1|state~17                                                                 ; out              ;
+; |control|cona:u1|state~18                                                            ; |control|cona:u1|state~18                                                                 ; out              ;
+; |control|cona:u1|state~19                                                            ; |control|cona:u1|state~19                                                                 ; out              ;
+; |control|cona:u1|state~20                                                            ; |control|cona:u1|state~20                                                                 ; out              ;
+; |control|cona:u1|th~18                                                               ; |control|cona:u1|th~18                                                                    ; out              ;
+; |control|cona:u1|r~1                                                                 ; |control|cona:u1|r~1                                                                      ; out              ;
+; |control|cona:u1|state~21                                                            ; |control|cona:u1|state~21                                                                 ; out              ;
+; |control|cona:u1|l                                                                   ; |control|cona:u1|l                                                                        ; regout           ;
+; |control|cona:u1|state.green                                                         ; |control|cona:u1|state.green                                                              ; regout           ;
+; |control|cona:u1|state.yellow                                                        ; |control|cona:u1|state.yellow                                                             ; regout           ;
+; |control|cona:u1|state.red                                                           ; |control|cona:u1|state.red                                                                ; regout           ;
+; |control|cona:u1|state.left                                                          ; |control|cona:u1|state.left                                                               ; regout           ;
+; |control|cona:u1|a                                                                   ; |control|cona:u1|a                                                                        ; regout           ;
+; |control|cona:u1|th[2]                                                               ; |control|cona:u1|th[2]                                                                    ; regout           ;
+; |control|cona:u1|th[1]                                                               ; |control|cona:u1|th[1]                                                                    ; regout           ;
+; |control|cona:u1|th[0]                                                               ; |control|cona:u1|th[0]                                                                    ; regout           ;
+; |control|cona:u1|tl[3]                                                               ; |control|cona:u1|tl[3]                                                                    ; regout           ;
+; |control|cona:u1|tl[2]                                                               ; |control|cona:u1|tl[2]                                                                    ; regout           ;
+; |control|cona:u1|tl[1]                                                               ; |control|cona:u1|tl[1]                                                                    ; regout           ;
+; |control|cona:u1|tl[0]                                                               ; |control|cona:u1|tl[0]                                                                    ; regout           ;
+; |control|cona:u1|g                                                                   ; |control|cona:u1|g                                                                        ; regout           ;
+; |control|cona:u1|r                                                                   ; |control|cona:u1|r                                                                        ; regout           ;
+; |control|cona:u1|y                                                                   ; |control|cona:u1|y                                                                        ; regout           ;
+; |control|cona:u1|state~22                                                            ; |control|cona:u1|state~22                                                                 ; out0             ;
+; |control|cona:u1|Selector16~0                                                        ; |control|cona:u1|Selector16~0                                                             ; out0             ;
+; |control|cona:u1|Selector16~1                                                        ; |control|cona:u1|Selector16~1                                                             ; out0             ;
+; |control|cona:u1|state.red~0                                                         ; |control|cona:u1|state.red~0                                                              ; out0             ;
+; |control|cona:u1|Selector16~2                                                        ; |control|cona:u1|Selector16~2                                                             ; out0             ;
+; |control|cona:u1|Selector16~3                                                        ; |control|cona:u1|Selector16~3                                                             ; out0             ;
+; |control|cona:u1|state~29                                                            ; |control|cona:u1|state~29                                                                 ; out0             ;
+; |control|conb:u2|Selector0~0                                                         ; |control|conb:u2|Selector0~0                                                              ; out              ;
+; |control|conb:u2|Selector1~0                                                         ; |control|conb:u2|Selector1~0                                                              ; out              ;
+; |control|conb:u2|Selector2~0                                                         ; |control|conb:u2|Selector2~0                                                              ; out              ;
+; |control|conb:u2|Selector3~0                                                         ; |control|conb:u2|Selector3~0                                                              ; out0             ;
+; |control|conb:u2|Selector3~1                                                         ; |control|conb:u2|Selector3~1                                                              ; out0             ;
+; |control|conb:u2|Selector3~2                                                         ; |control|conb:u2|Selector3~2                                                              ; out0             ;
+; |control|conb:u2|Selector3~3                                                         ; |control|conb:u2|Selector3~3                                                              ; out0             ;
+; |control|conb:u2|Selector3~4                                                         ; |control|conb:u2|Selector3~4                                                              ; out0             ;
+; |control|conb:u2|Selector4~0                                                         ; |control|conb:u2|Selector4~0                                                              ; out0             ;
+; |control|conb:u2|Selector4~1                                                         ; |control|conb:u2|Selector4~1                                                              ; out0             ;
+; |control|conb:u2|Selector4~2                                                         ; |control|conb:u2|Selector4~2                                                              ; out0             ;
+; |control|conb:u2|Selector4~3                                                         ; |control|conb:u2|Selector4~3                                                              ; out0             ;
+; |control|conb:u2|Selector4~4                                                         ; |control|conb:u2|Selector4~4                                                              ; out0             ;
+; |control|conb:u2|Selector5~0                                                         ; |control|conb:u2|Selector5~0                                                              ; out0             ;
+; |control|conb:u2|Selector5~1                                                         ; |control|conb:u2|Selector5~1                                                              ; out0             ;
+; |control|conb:u2|Selector5~2                                                         ; |control|conb:u2|Selector5~2                                                              ; out0             ;
+; |control|conb:u2|Selector5~3                                                         ; |control|conb:u2|Selector5~3                                                              ; out0             ;
+; |control|conb:u2|Selector5~4                                                         ; |control|conb:u2|Selector5~4                                                              ; out0             ;
+; |control|conb:u2|Selector6~0                                                         ; |control|conb:u2|Selector6~0                                                              ; out              ;
+; |control|conb:u2|Selector7~0                                                         ; |control|conb:u2|Selector7~0                                                              ; out              ;
+; |control|conb:u2|Selector8~0                                                         ; |control|conb:u2|Selector8~0                                                              ; out              ;
+; |control|conb:u2|Selector9~0                                                         ; |control|conb:u2|Selector9~0                                                              ; out              ;
+; |control|conb:u2|Selector10~0                                                        ; |control|conb:u2|Selector10~0                                                             ; out              ;
+; |control|conb:u2|Selector11~0                                                        ; |control|conb:u2|Selector11~0                                                             ; out              ;
+; |control|conb:u2|Selector12~0                                                        ; |control|conb:u2|Selector12~0                                                             ; out              ;
+; |control|conb:u2|Selector13~4                                                        ; |control|conb:u2|Selector13~4                                                             ; out0             ;
+; |control|conb:u2|Selector13~7                                                        ; |control|conb:u2|Selector13~7                                                             ; out0             ;
+; |control|cona:u1|Selector0~0                                                         ; |control|cona:u1|Selector0~0                                                              ; out              ;
+; |control|cona:u1|Selector1~0                                                         ; |control|cona:u1|Selector1~0                                                              ; out0             ;
+; |control|cona:u1|Selector1~1                                                         ; |control|cona:u1|Selector1~1                                                              ; out0             ;
+; |control|cona:u1|Selector1~3                                                         ; |control|cona:u1|Selector1~3                                                              ; out0             ;
+; |control|cona:u1|Selector1~4                                                         ; |control|cona:u1|Selector1~4                                                              ; out0             ;
+; |control|cona:u1|Selector2~0                                                         ; |control|cona:u1|Selector2~0                                                              ; out0             ;
+; |control|cona:u1|Selector2~1                                                         ; |control|cona:u1|Selector2~1                                                              ; out0             ;
+; |control|cona:u1|Selector2~3                                                         ; |control|cona:u1|Selector2~3                                                              ; out0             ;
+; |control|cona:u1|Selector2~4                                                         ; |control|cona:u1|Selector2~4                                                              ; out0             ;
+; |control|cona:u1|Selector3~0                                                         ; |control|cona:u1|Selector3~0                                                              ; out0             ;
+; |control|cona:u1|Selector3~1                                                         ; |control|cona:u1|Selector3~1                                                              ; out0             ;
+; |control|cona:u1|Selector3~3                                                         ; |control|cona:u1|Selector3~3                                                              ; out0             ;
+; |control|cona:u1|Selector3~4                                                         ; |control|cona:u1|Selector3~4                                                              ; out0             ;
+; |control|cona:u1|Selector4~0                                                         ; |control|cona:u1|Selector4~0                                                              ; out0             ;
+; |control|cona:u1|Selector4~1                                                         ; |control|cona:u1|Selector4~1                                                              ; out0             ;
+; |control|cona:u1|Selector4~2                                                         ; |control|cona:u1|Selector4~2                                                              ; out0             ;
+; |control|cona:u1|Selector4~3                                                         ; |control|cona:u1|Selector4~3                                                              ; out0             ;
+; |control|cona:u1|Selector4~4                                                         ; |control|cona:u1|Selector4~4                                                              ; out0             ;
+; |control|cona:u1|Selector5~0                                                         ; |control|cona:u1|Selector5~0                                                              ; out0             ;
+; |control|cona:u1|Selector5~1                                                         ; |control|cona:u1|Selector5~1                                                              ; out0             ;
+; |control|cona:u1|Selector5~2                                                         ; |control|cona:u1|Selector5~2                                                              ; out0             ;
+; |control|cona:u1|Selector5~3                                                         ; |control|cona:u1|Selector5~3                                                              ; out0             ;
+; |control|cona:u1|Selector5~4                                                         ; |control|cona:u1|Selector5~4                                                              ; out0             ;
+; |control|cona:u1|Selector6~0                                                         ; |control|cona:u1|Selector6~0                                                              ; out              ;
+; |control|cona:u1|Selector7~0                                                         ; |control|cona:u1|Selector7~0                                                              ; out0             ;
+; |control|cona:u1|Selector7~1                                                         ; |control|cona:u1|Selector7~1                                                              ; out0             ;
+; |control|cona:u1|Selector7~2                                                         ; |control|cona:u1|Selector7~2                                                              ; out0             ;
+; |control|cona:u1|Selector7~3                                                         ; |control|cona:u1|Selector7~3                                                              ; out0             ;
+; |control|cona:u1|Selector7~4                                                         ; |control|cona:u1|Selector7~4                                                              ; out0             ;
+; |control|cona:u1|Selector8~0                                                         ; |control|cona:u1|Selector8~0                                                              ; out              ;
+; |control|cona:u1|Selector9~0                                                         ; |control|cona:u1|Selector9~0                                                              ; out              ;
+; |control|cona:u1|Selector10~0                                                        ; |control|cona:u1|Selector10~0                                                             ; out              ;
+; |control|cona:u1|Selector11~0                                                        ; |control|cona:u1|Selector11~0                                                             ; out              ;
+; |control|cona:u1|Selector12~0                                                        ; |control|cona:u1|Selector12~0                                                             ; out              ;
+; |control|cona:u1|Selector13~0                                                        ; |control|cona:u1|Selector13~0                                                             ; out0             ;
+; |control|cona:u1|Selector13~2                                                        ; |control|cona:u1|Selector13~2                                                             ; out0             ;
+; |control|cona:u1|Selector13~3                                                        ; |control|cona:u1|Selector13~3                                                             ; out0             ;
+; |control|cona:u1|Selector13~4                                                        ; |control|cona:u1|Selector13~4                                                             ; out0             ;
+; |control|cona:u1|Selector14~0                                                        ; |control|cona:u1|Selector14~0                                                             ; out0             ;
+; |control|cona:u1|Selector14~2                                                        ; |control|cona:u1|Selector14~2                                                             ; out0             ;
+; |control|cona:u1|Selector14~3                                                        ; |control|cona:u1|Selector14~3                                                             ; out0             ;
+; |control|cona:u1|Selector15~0                                                        ; |control|cona:u1|Selector15~0                                                             ; out              ;
+; |control|cona:u1|Selector16~4                                                        ; |control|cona:u1|Selector16~4                                                             ; out0             ;
+; |control|cona:u1|Selector16~5                                                        ; |control|cona:u1|Selector16~5                                                             ; out0             ;
+; |control|cona:u1|Selector16~8                                                        ; |control|cona:u1|Selector16~8                                                             ; out0             ;
+; |control|conb:u2|Equal0~0                                                            ; |control|conb:u2|Equal0~0                                                                 ; out0             ;
+; |control|conb:u2|Equal1~0                                                            ; |control|conb:u2|Equal1~0                                                                 ; out0             ;
+; |control|conb:u2|Equal2~0                                                            ; |control|conb:u2|Equal2~0                                                                 ; out0             ;
+; |control|cona:u1|Equal0~0                                                            ; |control|cona:u1|Equal0~0                                                                 ; out0             ;
+; |control|cona:u1|Equal1~0                                                            ; |control|cona:u1|Equal1~0                                                                 ; out0             ;
+; |control|cona:u1|Equal2~0                                                            ; |control|cona:u1|Equal2~0                                                                 ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|result_node[1]                                     ; |control|cona:u1|lpm_add_sub:Add1|result_node[1]                                          ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|result_node[2]                                     ; |control|cona:u1|lpm_add_sub:Add1|result_node[2]                                          ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|result_node[3]                                     ; |control|cona:u1|lpm_add_sub:Add1|result_node[3]                                          ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|result_node[4]                                     ; |control|cona:u1|lpm_add_sub:Add1|result_node[4]                                          ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]~1                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]~1                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~2                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~2                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~3                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~3                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~4                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~4                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]                    ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]                         ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                    ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                    ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                    ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                         ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~4                                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~4                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~5                                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~5                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~6                                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~6                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~11                                 ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~11                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~12                                 ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~12                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~13                                 ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~13                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~14                                 ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~14                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~15                                 ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~15                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~16                                 ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~16                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~17                                 ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~17                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~18                                 ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~18                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~19                                 ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~19                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]      ; sout             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT ; cout             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; sout             ;
+; |control|cona:u1|lpm_add_sub:Add0|result_node[1]                                     ; |control|cona:u1|lpm_add_sub:Add0|result_node[1]                                          ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|result_node[2]                                     ; |control|cona:u1|lpm_add_sub:Add0|result_node[2]                                          ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|result_node[3]                                     ; |control|cona:u1|lpm_add_sub:Add0|result_node[3]                                          ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|result_node[4]                                     ; |control|cona:u1|lpm_add_sub:Add0|result_node[4]                                          ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~2                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~2                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~3                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~3                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~4                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~4                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                    ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                         ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                    ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                    ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                    ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                         ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~5                                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~5                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~6                                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~6                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~11                                 ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~11                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~12                                 ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~12                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~13                                 ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~13                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~14                                 ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~14                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~15                                 ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~15                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~16                                 ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~16                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~17                                 ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~17                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~18                                 ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~18                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~19                                 ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~19                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]      ; sout             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT ; cout             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; sout             ;
+; |control|conb:u2|lpm_add_sub:Add1|result_node[1]                                     ; |control|conb:u2|lpm_add_sub:Add1|result_node[1]                                          ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|result_node[2]                                     ; |control|conb:u2|lpm_add_sub:Add1|result_node[2]                                          ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|result_node[3]                                     ; |control|conb:u2|lpm_add_sub:Add1|result_node[3]                                          ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|result_node[4]                                     ; |control|conb:u2|lpm_add_sub:Add1|result_node[4]                                          ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]~1                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]~1                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~2                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~2                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~3                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~3                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~4                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~4                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]                    ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]                         ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                    ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                    ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                    ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                         ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~4                                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~4                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~5                                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~5                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~6                                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~6                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~11                                 ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~11                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~12                                 ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~12                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~13                                 ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~13                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~14                                 ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~14                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~15                                 ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~15                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~16                                 ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~16                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~17                                 ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~17                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~18                                 ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~18                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~19                                 ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~19                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]      ; sout             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT ; cout             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; sout             ;
+; |control|conb:u2|lpm_add_sub:Add0|result_node[1]                                     ; |control|conb:u2|lpm_add_sub:Add0|result_node[1]                                          ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|result_node[2]                                     ; |control|conb:u2|lpm_add_sub:Add0|result_node[2]                                          ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|result_node[3]                                     ; |control|conb:u2|lpm_add_sub:Add0|result_node[3]                                          ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|result_node[4]                                     ; |control|conb:u2|lpm_add_sub:Add0|result_node[4]                                          ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~2                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~2                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~3                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~3                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~4                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~4                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                    ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                         ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                    ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                    ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                    ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                         ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~5                                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~5                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~6                                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~6                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~11                                 ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~11                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~12                                 ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~12                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~13                                 ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~13                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~14                                 ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~14                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~15                                 ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~15                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~16                                 ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~16                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~17                                 ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~17                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~18                                 ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~18                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~19                                 ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~19                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]      ; sout             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT ; cout             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; sout             ;
++--------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                            ;
++--------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                            ; Output Port Name                                                                          ; Output Port Type ;
++--------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+
+; |control|rst                                                                         ; |control|rst                                                                              ; out              ;
+; |control|timh1[3]                                                                    ; |control|timh1[3]                                                                         ; pin_out          ;
+; |control|timh2[3]                                                                    ; |control|timh2[3]                                                                         ; pin_out          ;
+; |control|conb:u2|th[3]                                                               ; |control|conb:u2|th[3]                                                                    ; regout           ;
+; |control|conb:u2|state~17                                                            ; |control|conb:u2|state~17                                                                 ; out0             ;
+; |control|conb:u2|state~25                                                            ; |control|conb:u2|state~25                                                                 ; out0             ;
+; |control|cona:u1|th~14                                                               ; |control|cona:u1|th~14                                                                    ; out              ;
+; |control|cona:u1|th[3]                                                               ; |control|cona:u1|th[3]                                                                    ; regout           ;
+; |control|cona:u1|state~23                                                            ; |control|cona:u1|state~23                                                                 ; out0             ;
+; |control|cona:u1|state~31                                                            ; |control|cona:u1|state~31                                                                 ; out0             ;
+; |control|conb:u2|Selector13~5                                                        ; |control|conb:u2|Selector13~5                                                             ; out0             ;
+; |control|conb:u2|Selector13~6                                                        ; |control|conb:u2|Selector13~6                                                             ; out0             ;
+; |control|conb:u2|Selector13~8                                                        ; |control|conb:u2|Selector13~8                                                             ; out0             ;
+; |control|cona:u1|Selector1~2                                                         ; |control|cona:u1|Selector1~2                                                              ; out0             ;
+; |control|cona:u1|Selector2~2                                                         ; |control|cona:u1|Selector2~2                                                              ; out0             ;
+; |control|cona:u1|Selector3~2                                                         ; |control|cona:u1|Selector3~2                                                              ; out0             ;
+; |control|cona:u1|Selector13~1                                                        ; |control|cona:u1|Selector13~1                                                             ; out0             ;
+; |control|cona:u1|Selector14~1                                                        ; |control|cona:u1|Selector14~1                                                             ; out0             ;
+; |control|cona:u1|Selector14~4                                                        ; |control|cona:u1|Selector14~4                                                             ; out0             ;
+; |control|cona:u1|Selector16~6                                                        ; |control|cona:u1|Selector16~6                                                             ; out0             ;
+; |control|cona:u1|Selector16~7                                                        ; |control|cona:u1|Selector16~7                                                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[0]                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~0                                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~0                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~1                                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~1                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~2                                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~2                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~3                                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~3                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[4]~1                      ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[4]~1                           ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[4]                        ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[4]                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[3]                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[2]                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[1]                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~7                                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~7                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~8                                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~8                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~9                                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~9                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~10                                 ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~10                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[0]                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~0                                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~0                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~1                                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~1                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~2                                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~2                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~3                                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~3                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[4]~1                      ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[4]~1                           ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[4]                        ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[4]                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[3]                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[2]                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[1]                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~1                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~1                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~4                                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~4                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~7                                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~7                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~8                                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~8                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~9                                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~9                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~10                                 ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~10                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[0]                             ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~0                                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~0                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~1                                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~1                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~2                                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~2                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~3                                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~3                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[4]~1                      ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[4]~1                           ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[4]                        ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[4]                             ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[3]                             ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[2]                             ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[1]                             ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~7                                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~7                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~8                                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~8                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~9                                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~9                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~10                                 ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~10                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[0]                             ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~0                                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~0                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~1                                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~1                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~2                                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~2                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~3                                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~3                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[4]~1                      ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[4]~1                           ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[4]                        ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[4]                             ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[3]                             ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[2]                             ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[1]                             ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~1                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~1                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~4                                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~4                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~7                                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~7                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~8                                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~8                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~9                                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~9                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~10                                 ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~10                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
++--------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                            ;
++--------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                            ; Output Port Name                                                                          ; Output Port Type ;
++--------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+
+; |control|timh1[3]                                                                    ; |control|timh1[3]                                                                         ; pin_out          ;
+; |control|timh2[3]                                                                    ; |control|timh2[3]                                                                         ; pin_out          ;
+; |control|conb:u2|th[3]                                                               ; |control|conb:u2|th[3]                                                                    ; regout           ;
+; |control|cona:u1|th~14                                                               ; |control|cona:u1|th~14                                                                    ; out              ;
+; |control|cona:u1|th[3]                                                               ; |control|cona:u1|th[3]                                                                    ; regout           ;
+; |control|conb:u2|Selector13~5                                                        ; |control|conb:u2|Selector13~5                                                             ; out0             ;
+; |control|conb:u2|Selector13~6                                                        ; |control|conb:u2|Selector13~6                                                             ; out0             ;
+; |control|conb:u2|Selector13~8                                                        ; |control|conb:u2|Selector13~8                                                             ; out0             ;
+; |control|cona:u1|Selector1~2                                                         ; |control|cona:u1|Selector1~2                                                              ; out0             ;
+; |control|cona:u1|Selector2~2                                                         ; |control|cona:u1|Selector2~2                                                              ; out0             ;
+; |control|cona:u1|Selector3~2                                                         ; |control|cona:u1|Selector3~2                                                              ; out0             ;
+; |control|cona:u1|Selector13~1                                                        ; |control|cona:u1|Selector13~1                                                             ; out0             ;
+; |control|cona:u1|Selector14~1                                                        ; |control|cona:u1|Selector14~1                                                             ; out0             ;
+; |control|cona:u1|Selector14~4                                                        ; |control|cona:u1|Selector14~4                                                             ; out0             ;
+; |control|cona:u1|Selector16~6                                                        ; |control|cona:u1|Selector16~6                                                             ; out0             ;
+; |control|cona:u1|Selector16~7                                                        ; |control|cona:u1|Selector16~7                                                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[0]                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~0                                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~0                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~1                                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~1                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~2                                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~2                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~3                                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~3                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[4]~1                      ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[4]~1                           ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[4]                        ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[4]                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[3]                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[2]                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|datab_node[1]                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~7                                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~7                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~8                                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~8                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~9                                  ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~9                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~10                                 ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|_~10                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |control|cona:u1|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[0]                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~0                                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~0                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~1                                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~1                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~2                                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~2                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~3                                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~3                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[4]~1                      ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[4]~1                           ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[4]                        ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[4]                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[3]                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[2]                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|datab_node[1]                             ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~1                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~1                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~4                                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~4                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~7                                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~7                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~8                                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~8                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~9                                  ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~9                                       ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~10                                 ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|_~10                                      ; out0             ;
+; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |control|cona:u1|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[0]                             ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~0                                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~0                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~1                                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~1                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~2                                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~2                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~3                                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~3                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[4]~1                      ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[4]~1                           ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[4]                        ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[4]                             ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[3]                             ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[2]                             ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|datab_node[1]                             ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~7                                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~7                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~8                                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~8                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~9                                  ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~9                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~10                                 ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|_~10                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |control|conb:u2|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[0]                             ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~0                                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~0                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~1                                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~1                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~2                                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~2                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~3                                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~3                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[4]~1                      ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[4]~1                           ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[4]                        ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[4]                             ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[3]                             ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[2]                             ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|datab_node[1]                             ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~1                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~1                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~4                                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~4                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~7                                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~7                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~8                                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~8                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~9                                  ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~9                                       ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~10                                 ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|_~10                                      ; out0             ;
+; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |control|conb:u2|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
++--------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Wed Dec 30 09:11:50 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off control -c control
+Info: Using vector source file "D:/jiaotongdeng/control.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      80.60 %
+Info: Number of transitions in simulation is 1471398
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 144 megabytes
+    Info: Processing ended: Wed Dec 30 09:11:52 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+
