@@ -1,0 +1,7 @@
+
+State Machine - |cona|state
+Name state.green state.red state.yellow state.left 
+state.left 0 0 0 0 
+state.yellow 0 0 1 1 
+state.red 0 1 0 1 
+state.green 1 0 0 1 

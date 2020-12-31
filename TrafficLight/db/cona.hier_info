@@ -1,0 +1,41 @@
+|cona
+rst => a.ACLR
+rst => l~reg0.ENA
+rst => th[3].ENA
+rst => th[2].ENA
+rst => th[1].ENA
+rst => th[0].ENA
+rst => tl[3].ENA
+rst => tl[2].ENA
+rst => tl[1].ENA
+rst => tl[0].ENA
+rst => g~reg0.ENA
+rst => r~reg0.ENA
+rst => y~reg0.ENA
+clk => a.CLK
+clk => th[3].CLK
+clk => th[2].CLK
+clk => th[1].CLK
+clk => th[0].CLK
+clk => tl[3].CLK
+clk => tl[2].CLK
+clk => tl[1].CLK
+clk => tl[0].CLK
+clk => g~reg0.CLK
+clk => r~reg0.CLK
+clk => y~reg0.CLK
+clk => l~reg0.CLK
+r <= r~reg0.DB_MAX_OUTPUT_PORT_TYPE
+g <= g~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y <= y~reg0.DB_MAX_OUTPUT_PORT_TYPE
+l <= l~reg0.DB_MAX_OUTPUT_PORT_TYPE
+timh[0] <= th[0].DB_MAX_OUTPUT_PORT_TYPE
+timh[1] <= th[1].DB_MAX_OUTPUT_PORT_TYPE
+timh[2] <= th[2].DB_MAX_OUTPUT_PORT_TYPE
+timh[3] <= th[3].DB_MAX_OUTPUT_PORT_TYPE
+timl[0] <= tl[0].DB_MAX_OUTPUT_PORT_TYPE
+timl[1] <= tl[1].DB_MAX_OUTPUT_PORT_TYPE
+timl[2] <= tl[2].DB_MAX_OUTPUT_PORT_TYPE
+timl[3] <= tl[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
